@@ -1,24 +1,50 @@
 .container {
-  padding: 0 2rem;
+  /* min-height: 40vh; */
+  width:70%;
+  margin: auto;
+  margin-top: 14%;
+  min-height: 43vh;
+  background-color: #ECFDF5
+}
+
+.h1 {
+  padding: .5rem;
+  font-size:x-large; 
+  font-weight: 600;
+  align-items: left;
+  background-color: #15b981;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  /* height: 20vh; */
+  width: 65%;
+  margin: auto;
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction:column;
+  font-size:small; 
+  font-weight: 300;
+  /* align-content: space-around; */
+  background-color: #6FE6B7;
 }
 
+.p {
+  padding: 1.5rem;
+  font-size:large; 
+  font-weight: 400;
+  text-align: center;
+  background-color: #6FE6B7;
+}
+
+
+
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  padding: .5rem;
+  margin-top: 30px;
+  font-size:x-small; 
+  font-weight: 200;
+  align-items: left;
+  background-color: #15b981;
 }
 
 .footer a {
@@ -40,7 +66,7 @@
 }
 
 .title {
-  margin: 0;
+  margin: 10px;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -51,9 +77,11 @@
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  padding: 1.5rem;
+  font-size:medium; 
+  font-weight: 200;
+  text-align: center;
+  background-color: white;
 }
 
 .code {
@@ -66,11 +94,18 @@
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  /* grid-row-end: 2; */
+  grid-column-start: span;
+  width: 100%;
+  display: block;
+  /* flex-direction:column; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  /* max-width: 800px; */
+  align-content:space-around;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: x-small;
 }
 
 .card {
@@ -82,7 +117,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 45%;
 }
 
 .card:hover,
@@ -104,7 +139,7 @@
 }
 
 .logo {
-  height: 1em;
+  height: 5rem;
   margin-left: 0.5rem;
 }
 
@@ -112,18 +147,5 @@
   .grid {
     width: 100%;
     flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
   }
 }
