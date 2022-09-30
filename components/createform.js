@@ -47,25 +47,27 @@ export default function CreateForm() {
     <p className='text-lg font-semibold text-center py-4'>
       Create Cookie Stand
     </p>
-    <div className='flex flex-row mx-auto pl-3 pr-3'>
-    <label className='h-6 pr-3' htmlFor="Loc">Location</label>
-    <input type="text" id="Loc" name="Loc" placeholder='Enter City' required className='h-6 flex flex-grow'/>
+    <div className='grid grid-cols-2 place-content-evenly g-0'>
+      <div className='flex flex-col items-stretch mt-6 font-semibold text-md text-center pl-3 pr-3'>
+      <label className='h-6 pr-3' htmlFor="Loc">ADD LOCATION</label>
+      <input type="text" id="Loc" name="Loc" placeholder='Cookie Stand Location' required className='h-6 flex flex-grow'/>
+      </div>
+      <div className='flex flex-col items-stretch mt-6 text-xs pl-3 pr-3'>
+        <button type="submit" className="h-12 bg-emerald-600 text-black font-medium duration-150 ease-in-out">CREATE</button>
     </div>
-    <div className='grid grid-cols-4 place-content-evenly g-0'>
+    </div>
+    <div className='grid grid-cols-3 place-content-evenly g-0'>
       <div className='flex flex-col items-stretch mt-6 text-xs ml-2 pl-3 pr-3 border-solid border-3 bg-emerald-200'>
       <label className='text-center ' htmlFor="Min">Minimum Customers Per Hour </label>
-      <input type="text" id="Min" name="Min" required className='h-6'/>
+      <input type="text" id="Min" name="Min" placeholder='0'required className='h-6'/>
       </div>
       <div className='flex flex-col items-stretch mt-6 text-xs ml-2 pl-3 pr-3 border-solid border-3 bg-emerald-200'>
       <label className='text-center' htmlFor="Max">Maximum Customers per Hour</label>
-      <input type="text" id="Max" name="Max" required className='h-6'/>
+      <input type="text" id="Max" name="Max" placeholder='0' required className='h-6'/>
       </div>
       <div className='flex flex-col items-stretch mt-6 text-xs ml-2 pl-3 pr-3 border-solid border-3 bg-emerald-200'>
       <label className='text-center' htmlFor="Avg">Average Cookies per Sale</label>
-      <input type="text" id="Avg" name="Avg" required className='h-6'/>
-      </div>
-      <div className='flex flex-col items-stretch mt-6 text-xs pl-3 pr-3'>
-       <button type="submit" className="h-12 bg-emerald-600 text-black font-medium duration-150 ease-in-out">CREATE</button>
+      <input type="text" id="Avg" name="Avg" placeholder='0' required className='h-6'/>
       </div>
     </div>
     <div className='bg-emerald-50 mt-10 pt-4 text-lg font-semibold text-center'>
