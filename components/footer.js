@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return(
-      <footer className='bg-emerald-400 text-xs mb-auto py-2 pl-3'>0 Locations Available</footer>
+      <footer className='bg-emerald-400 text-center text-xs mb-auto py-2 pl-3'>9 Locations Available</footer>
   );
 }
 
