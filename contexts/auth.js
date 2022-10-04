@@ -32,7 +32,11 @@ export function AuthProvider(props) {
 
         const response = await axios.post(loginUrl, { username, password });
 
+        console.log("line 35 inside auth ==> " +response);
+
         const decodedAccess = jwt.decode(response.data.access);
+
+        console.log("line 37 response.data.access in useRsource ==>" + response.data.access)
 
         const newState = {
             tokens: response.data,

@@ -21,7 +21,8 @@ export default function useResource() {
 
             return response.data;
 
-        } catch (err) {
+        } catch (err) { 
+            console.log('get error ' + err);
             handleError(err);
         }
     }
