@@ -59,7 +59,8 @@ export default function useResource() {
 
         return {
             headers: {
-                'Authorization': 'Bearer ' + tokens.access
+                'Authorization': 'Bearer ' + tokens.access,
+                'Access-Control-Allow-Origin': 'http://localhost:3000'
             }
         };
     }
